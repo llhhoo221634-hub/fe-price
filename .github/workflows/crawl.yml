@@ -1,0 +1,58 @@
+# 《火炬之光：无限》火价爬虫 — 定时抓变并把 data.json 提交回仓库
+# 纯代码管线：没有任何 AI/LLM 步骤，不存在按次调用模垎的开销。
+# 单次运行预计 1~2 分钟（装依赖走缓存、Chromium 走缓存，抓变本身约 20~60 秒）。
+name: fe-price-crawler
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # 每 15 分钟
+  workflow_dispatch:          # 允许手动触叟
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fe-crawler
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      # 缓存 Playwright 浏览器／只装 chromium／避免每次重下 ~170MB
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Install Chromium (Playwright)
+        run: playwright install --only-shell chromium || playwright install chromium
+
+      - name: Run crawler
+        run: python crawler.py
+
+      - name: Commit data.json
+        run: |
+          git config user.name "fe-crawler-bot"
+          git config user.email "actions@github.com"
+          git add data.json
+          if git diff --cached --quiet; then
+            echo "data.json 无变化，跳过提交"
+          else
+            git commit -m "data: FE price snapshot $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
