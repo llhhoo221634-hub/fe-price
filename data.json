@@ -1,27 +1,22 @@
 {
-  "updated_at": "2026-10-28T20:56:47+08:00",
+  "updated_at": "2026-10-29T02:31:23+08:00",
   "unit": "CNY per 1000 FE",
   "server_scope": "赛季服 (SS14 塔罗斯的困兽)",
   "qiandao": {
-    "min_listing": null,
-    "listed_price": null,
+    "min_listing": 5.4,
+    "listed_price": 5.4,
     "avg_1d": null,
-    "stale": true,
-    "last_success_at": null
+    "stale": false,
+    "last_success_at": "2026-10-29T02:31:23+08:00"
   },
   "dd373": {
-    "min_listing": 5.66,
-    "mainstream": 6.2,
-    "buyback": 5.76,
+    "min_listing": 5.29,
+    "mainstream": 6.0,
+    "buyback": 5.56,
     "stale": false,
-    "last_success_at": "2026-10-28T20:56:47+08:00"
+    "last_success_at": "2026-10-29T02:31:23+08:00"
   },
   "daily": [
-    {
-      "date": "2026-10-21",
-      "price_cny_per_1000": 21.62,
-      "source": "dd373"
-    },
     {
       "date": "2026-10-22",
       "price_cny_per_1000": 16.76,
@@ -49,15 +44,19 @@
     },
     {
       "date": "2026-10-27",
-      "price_cny_per_1000": 6.99,
+      "price_cny_per_1000": 6.94,
+      "source": "dd373"
+    },
+    {
+      "date": "2026-10-28",
+      "price_cny_per_1000": 5.97,
       "source": "dd373"
     }
   ],
   "errors": {
     "qiandao": [
       "通道1 JSON接口(api.qiandao.com): ValueError: 被千岛 WAF 拦截 (HTTP 405)，非浏览器指纹的直连请求被拒绝",
-      "通道2 镜像接口(api.qiandao.cn): ValueError: 被千岛 WAF 拦截 (HTTP 405)，非浏览器指纹的直连请求被拒绝",
-      "通道3 Playwright渲染: ValueError: 渲染页未提取到价格（可能被 WAF 拦截或需登录选服）"
+      "通道2 镜像接口(api.qiandao.cn): ValueError: 被千岛 WAF 拦截 (HTTP 405)，非浏览器指纹的直连请求被拒绝"
     ],
     "dd373": []
   }
