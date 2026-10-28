@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T19:43:55+08:00",
+  "updated_at": "2026-10-28T20:56:47+08:00",
   "unit": "CNY per 1000 FE",
   "server_scope": "赛季服 (SS14 塔罗斯的困兽)",
   "qiandao": {
@@ -10,11 +10,11 @@
     "last_success_at": null
   },
   "dd373": {
-    "min_listing": 5.8,
+    "min_listing": 5.66,
     "mainstream": 6.2,
-    "buyback": 5.88,
+    "buyback": 5.76,
     "stale": false,
-    "last_success_at": "2026-10-28T19:43:55+08:00"
+    "last_success_at": "2026-10-28T20:56:47+08:00"
   },
   "daily": [
     {
@@ -56,8 +56,8 @@
   "errors": {
     "qiandao": [
       "通道1 JSON接口(api.qiandao.com): ValueError: 被千岛 WAF 拦截 (HTTP 405)，非浏览器指纹的直连请求被拒绝",
-      "通道2 镜像接口(api.qiandao.cn): ReadTimeout: HTTPSConnectionPool(host='api.qiandao.cn', port=443): Read timed out. (read timeout=15)",
-      "通道3 Playwright渲染: Error: BrowserType.launch: Executable doesn't exist at /home/hatch/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n╔═════════════════"
+      "通道2 镜像接口(api.qiandao.cn): ValueError: 被千岛 WAF 拦截 (HTTP 405)，非浏览器指纹的直连请求被拒绝",
+      "通道3 Playwright渲染: ValueError: 渲染页未提取到价格（可能被 WAF 拦截或需登录选服）"
     ],
     "dd373": []
   }
