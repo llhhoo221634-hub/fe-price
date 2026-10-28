@@ -1,0 +1,64 @@
+{
+  "updated_at": "2026-10-28T19:43:55+08:00",
+  "unit": "CNY per 1000 FE",
+  "server_scope": "赛季服 (SS14 塔罗斯的困兽)",
+  "qiandao": {
+    "min_listing": null,
+    "listed_price": null,
+    "avg_1d": null,
+    "stale": true,
+    "last_success_at": null
+  },
+  "dd373": {
+    "min_listing": 5.8,
+    "mainstream": 6.2,
+    "buyback": 5.88,
+    "stale": false,
+    "last_success_at": "2026-10-28T19:43:55+08:00"
+  },
+  "daily": [
+    {
+      "date": "2026-10-21",
+      "price_cny_per_1000": 21.62,
+      "source": "dd373"
+    },
+    {
+      "date": "2026-10-22",
+      "price_cny_per_1000": 16.76,
+      "source": "dd373"
+    },
+    {
+      "date": "2026-10-23",
+      "price_cny_per_1000": 14.19,
+      "source": "dd373"
+    },
+    {
+      "date": "2026-10-24",
+      "price_cny_per_1000": 12.18,
+      "source": "dd373"
+    },
+    {
+      "date": "2026-10-25",
+      "price_cny_per_1000": 10.1,
+      "source": "dd373"
+    },
+    {
+      "date": "2026-10-26",
+      "price_cny_per_1000": 8.76,
+      "source": "dd373"
+    },
+    {
+      "date": "2026-10-27",
+      "price_cny_per_1000": 6.99,
+      "source": "dd373"
+    }
+  ],
+  "errors": {
+    "qiandao": [
+      "通道1 JSON接口(api.qiandao.com): ValueError: 被千岛 WAF 拦截 (HTTP 405)，非浏览器指纹的直连请求被拒绝",
+      "通道2 镜像接口(api.qiandao.cn): ReadTimeout: HTTPSConnectionPool(host='api.qiandao.cn', port=443): Read timed out. (read timeout=15)",
+      "通道3 Playwright渲染: Error: BrowserType.launch: Executable doesn't exist at /home/hatch/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n╔═════════════════"
+    ],
+    "dd373": []
+  }
+}
