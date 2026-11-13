@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T16:38:01+08:00",
+  "updated_at": "2026-11-14T00:45:40+08:00",
   "unit": "CNY per 1000 FE",
   "server_scope": "赛季服 (SS14 塔罗斯的困兽)",
   "qiandao": {
@@ -14,14 +14,9 @@
     "mainstream": 2.5,
     "buyback": null,
     "stale": false,
-    "last_success_at": "2026-11-13T16:38:01+08:00"
+    "last_success_at": "2026-11-14T00:45:40+08:00"
   },
   "daily": [
-    {
-      "date": "2026-11-06",
-      "price_cny_per_1000": 3.22,
-      "source": "dd373"
-    },
     {
       "date": "2026-11-07",
       "price_cny_per_1000": 3.07,
@@ -49,7 +44,12 @@
     },
     {
       "date": "2026-11-12",
-      "price_cny_per_1000": 2.19,
+      "price_cny_per_1000": 2.18,
+      "source": "dd373"
+    },
+    {
+      "date": "2026-11-13",
+      "price_cny_per_1000": 2.23,
       "source": "dd373"
     }
   ],
