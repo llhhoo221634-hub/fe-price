@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T08:48:53+08:00",
+  "updated_at": "2026-11-18T16:21:47+08:00",
   "unit": "CNY per 1000 FE",
   "server_scope": "赛季服 (SS14 塔罗斯的困兽)",
   "qiandao": {
@@ -10,11 +10,11 @@
     "last_success_at": "2026-10-30T14:20:28+08:00"
   },
   "dd373": {
-    "min_listing": 2.42,
+    "min_listing": 2.4,
     "mainstream": 2.5,
     "buyback": null,
     "stale": false,
-    "last_success_at": "2026-11-18T08:48:53+08:00"
+    "last_success_at": "2026-11-18T16:21:47+08:00"
   },
   "daily": [
     {
@@ -59,6 +59,9 @@
       "通道2 镜像接口(api.qiandao.cn): ValueError: 被千岛 WAF 拦截 (HTTP 405)，非浏览器指纹的直连请求被拒绝",
       "通道3 Playwright渲染: ValueError: 渲染页未提取到价格（可能被 WAF 拦截或需登录选服）"
     ],
-    "dd373": []
+    "dd373": [
+      "通道1 列表页直抓: ValueError: 列表页未解析到任何挂单",
+      "通道2 分页URL变体: ValueError: 列表页未解析到任何挂单"
+    ]
   }
 }
