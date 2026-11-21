@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T09:41:50+08:00",
+  "updated_at": "2026-11-21T16:49:54+08:00",
   "unit": "CNY per 1000 FE",
   "server_scope": "赛季服 (SS14 塔罗斯的困兽)",
   "qiandao": {
@@ -10,11 +10,11 @@
     "last_success_at": "2026-10-30T14:20:28+08:00"
   },
   "dd373": {
-    "min_listing": 1.9,
+    "min_listing": 1.95,
     "mainstream": 2.0,
     "buyback": null,
     "stale": false,
-    "last_success_at": "2026-11-21T09:41:50+08:00"
+    "last_success_at": "2026-11-21T16:49:54+08:00"
   },
   "daily": [
     {
